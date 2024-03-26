@@ -120,7 +120,7 @@ que originalmente era seu antecessor, e o último nó da lista passará a ser o
 primeiro nó da lista invertida, conforme ilustrado a seguir:
 
 Esta função deve obedecer ao protótipo:
-def inverte(lst):""""
+def inverte(lst):"""
 ??????????
 
 """5. Considere listas que armazenam cadeias de caracteres e implemente uma
