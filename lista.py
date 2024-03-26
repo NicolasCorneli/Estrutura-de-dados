@@ -108,7 +108,6 @@ imprime_lista(lst2)
 """3. Implemente uma função que construa uma nova lista com a intercalação
 dos nós de outras duas listas passadas como parâmetros. Esta função deve
 retornar a lista resultante, conforme ilustrado a seguir:
-
 Esta função deve obedecer ao protótipo:
 def merge(l1, l2):"""
  ????????????????
@@ -118,7 +117,6 @@ e inverta o encadeamento de seus nós, retornando a lista resultante. Após a
 execução desta função, cada nó da lista vai estar referenciando (prox) o nó
 que originalmente era seu antecessor, e o último nó da lista passará a ser o
 primeiro nó da lista invertida, conforme ilustrado a seguir:
-
 Esta função deve obedecer ao protótipo:
 def inverte(lst):"""
 ??????????
@@ -188,7 +186,6 @@ igual(lst,lst2)
 """6. Considere listas que armazenam cadeias de caracteres e implemente uma
 função para criar uma cópia de uma lista encadeada. Essa função deve
 obedecer ao protótipo:
-
 def copia(lst):"""
 ???????????????????
 
