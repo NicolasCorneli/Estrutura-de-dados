@@ -1,9 +1,9 @@
-"""1. Considere listas de valores inteiros e implemente uma função que receba
-como parâmetros uma lista encadeada e um valor inteiro n, retire da lista
-todas as ocorrências de n e retorne a lista resultante. Esta função deve
-obedecer ao protótipo:
+#1. Considere listas de valores inteiros e implemente uma função que receba
+#como parâmetros uma lista encadeada e um valor inteiro n, retire da lista
+#todas as ocorrências de n e retorne a lista resultante. Esta função deve
+#obedecer ao protótipo:
 
-def retira_n(lst, n):"""
+#def retira_n(lst, n):
 
 class Lista:
     def __init__(self,valor=None):
@@ -53,16 +53,16 @@ lst = retira_n(lst,10)
 print("---Nova lista---")
 imprime_lista(lst)
 
-"""2. Considere listas de valores inteiros e implemente uma função que receba
-como parâmetro uma lista encadeada e um valor inteiro n e divida a lista em
-duas, de forma a segunda lista começar no primeiro nó logo após a
-ocorrência de n na lista original. A figura a seguir ilustra esta separação:
+#2. Considere listas de valores inteiros e implemente uma função que receba
+#como parâmetro uma lista encadeada e um valor inteiro n e divida a lista em
+#duas, de forma a segunda lista começar no primeiro nó logo após a
+#ocorrência de n na lista original. A figura a seguir ilustra esta separação:
 
-A função deve retornar a referência para a segunda subdivisão da lista
-original, enquanto lst deve continuar apontando para o primeiro elemento da
-primeira subdivisão da lista. Essa função deve obedecer ao protótipo:
+#A função deve retornar a referência para a segunda subdivisão da lista
+#original, enquanto lst deve continuar apontando para o primeiro elemento da
+#primeira subdivisão da lista. Essa função deve obedecer ao protótipo:
 
-def separa(lst, n):"""
+#def separa(lst, n):
 
 class Lista:
     def __init__(self,valor=None):
@@ -105,27 +105,27 @@ lst2 = separa(lst,15)
 imprime_lista(lst)
 imprime_lista(lst2)
 
-"""3. Implemente uma função que construa uma nova lista com a intercalação
-dos nós de outras duas listas passadas como parâmetros. Esta função deve
-retornar a lista resultante, conforme ilustrado a seguir:
-Esta função deve obedecer ao protótipo:
-def merge(l1, l2):"""
+#3. Implemente uma função que construa uma nova lista com a intercalação
+#dos nós de outras duas listas passadas como parâmetros. Esta função deve
+#retornar a lista resultante, conforme ilustrado a seguir:
+#Esta função deve obedecer ao protótipo:
+#def merge(l1, l2):
  ????????????????
 
-"""4. Implemente uma função que receba como parâmetro uma lista encadeada
-e inverta o encadeamento de seus nós, retornando a lista resultante. Após a
-execução desta função, cada nó da lista vai estar referenciando (prox) o nó
-que originalmente era seu antecessor, e o último nó da lista passará a ser o
-primeiro nó da lista invertida, conforme ilustrado a seguir:
-Esta função deve obedecer ao protótipo:
-def inverte(lst):"""
+#4. Implemente uma função que receba como parâmetro uma lista encadeada
+#e inverta o encadeamento de seus nós, retornando a lista resultante. Após a
+#execução desta função, cada nó da lista vai estar referenciando (prox) o nó
+#que originalmente era seu antecessor, e o último nó da lista passará a ser o
+#primeiro nó da lista invertida, conforme ilustrado a seguir:
+#Esta função deve obedecer ao protótipo:
+#def inverte(lst):
 ??????????
 
-"""5. Considere listas que armazenam cadeias de caracteres e implemente uma
-função para testar se duas listas passadas como parâmetros são iguais. Essa
-função deve obedecer ao protótipo:
+#5. Considere listas que armazenam cadeias de caracteres e implemente uma
+#função para testar se duas listas passadas como parâmetros são iguais. Essa
+#função deve obedecer ao protótipo:
 
-def igual(l1, l2):"""
+#def igual(l1, l2):
 
 class Lista:
     def __init__(self,valor=None):
@@ -183,14 +183,14 @@ print("---Lista 2---")
 imprime_lista(lst2)
 igual(lst,lst2)
 
-"""6. Considere listas que armazenam cadeias de caracteres e implemente uma
-função para criar uma cópia de uma lista encadeada. Essa função deve
-obedecer ao protótipo:
-def copia(lst):"""
+#6. Considere listas que armazenam cadeias de caracteres e implemente uma
+#função para criar uma cópia de uma lista encadeada. Essa função deve
+#obedecer ao protótipo:
+#def copia(lst):
 ???????????????????
 
-"""7. Implemente funções para inserir e retirar um elemento de uma lista circular
-simplesmente encadeada (obtenha informações adicionais sobre listas
-circulares na bibliografia básica da disciplina)."""
+#7. Implemente funções para inserir e retirar um elemento de uma lista circular
+#simplesmente encadeada (obtenha informações adicionais sobre listas
+#circulares na bibliografia básica da disciplina).
 ???????????????
 
