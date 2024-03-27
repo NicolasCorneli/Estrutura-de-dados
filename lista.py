@@ -192,5 +192,64 @@ igual(lst,lst2)
 #7. Implemente funções para inserir e retirar um elemento de uma lista circular
 #simplesmente encadeada (obtenha informações adicionais sobre listas
 #circulares na bibliografia básica da disciplina).
-???????????????
 
+class Lista:
+    def __init__(self,valor=None):
+        self.valor = valor
+        self.prox = None
+
+def cria_lista():
+    return None
+
+def insere_lista(lst,valor):
+    novo_no = Lista(valor)
+    novo_no.prox = lst
+    return novo_no
+
+#Essa função imprime lista só funciona para uma lista com 3 números
+def imprime_lista(lst,ultimo_no):
+    atual = lst
+    while atual:
+        print(atual.valor)
+        atual = atual.prox
+        print(atual.valor)
+        if atual == ultimo_no:
+            break
+        if ultimo_no is None:
+            break
+
+def circula_lista(lst):
+    atual = lst
+    while atual is not None:
+        ultimo_no = atual
+        atual = atual.prox
+    ultimo_no.prox = lst
+    return lst,ultimo_no
+
+def remove_number(lst,ultimo_no,valor):
+    ant = None
+    atual = lst
+    while atual.valor != valor:
+        ant = atual
+        atual = atual.prox
+        if atual.valor == ultimo_no and ultimo_no != valor:
+            break
+    
+    if ant is None:
+        lst = atual.prox
+
+    else:
+        ant.prox = atual.prox
+        if valor == ultimo_no.valor:
+            ultimo_no = None
+    
+    return lst,ultimo_no
+
+    
+lst = cria_lista()
+lst = insere_lista(lst,5)
+lst = insere_lista(lst,10)
+lst = insere_lista(lst,15)
+lst,ultimo_no = circula_lista(lst)
+lst,ultimo_no = remove_number(lst,ultimo_no,5)
+imprime_lista(lst,ultimo_no)
