@@ -206,16 +206,13 @@ def insere_lista(lst,valor):
     novo_no.prox = lst
     return novo_no
 
-#Essa função imprime lista só funciona para uma lista com 3 números
 def imprime_lista(lst,ultimo_no):
     atual = lst
     while atual:
         print(atual.valor)
         atual = atual.prox
-        print(atual.valor)
         if atual == ultimo_no:
-            break
-        if ultimo_no is None:
+            print(atual.valor)
             break
 
 def circula_lista(lst):
@@ -241,7 +238,7 @@ def remove_number(lst,ultimo_no,valor):
     else:
         ant.prox = atual.prox
         if valor == ultimo_no.valor:
-            ultimo_no = None
+            ultimo_no = ant
     
     return lst,ultimo_no
 
@@ -250,6 +247,7 @@ lst = cria_lista()
 lst = insere_lista(lst,5)
 lst = insere_lista(lst,10)
 lst = insere_lista(lst,15)
+lst = insere_lista(lst,20)
 lst,ultimo_no = circula_lista(lst)
 lst,ultimo_no = remove_number(lst,ultimo_no,5)
 imprime_lista(lst,ultimo_no)
